@@ -1,0 +1,4 @@
+calculate area of a rectangle using a function
+develop a calculator for add, sub, mul, div using js functions
+in other programming langauages (==) in js (====)
+write function to calculate compound intrest (principle, time, rate of intrest)  𝐴 = p x (1+r)^t
