@@ -3,11 +3,7 @@ develop a calculator for add, sub, mul, div using js functions
 in other programming langauages (==) in js (====)
 write function to calculate compound intrest (principle, time, rate of intrest)  𝐴 = p x (1+r)^t
 a person is travelling form a to b at a speed of 30kmph speed will be double every 10 mins calculate the distance a to b with the max speed 120kmph and travel for 96 mins what is distance btw a to b
- echo "# Soc" 
- README.md
-git init
- git add README.md
- git commit -m "first commit"
- git branch -M main
- git remote add origin https://github.com/HanshithE/Soc.git
-git push -u origin main 
+
+git add .
+git commit -m "your message"
+git push
