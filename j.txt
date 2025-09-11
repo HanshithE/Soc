@@ -7,3 +7,4 @@ a person is travelling form a to b at a speed of 30kmph speed will be double eve
 git add .
 git commit -m "your message"
 git push
+the basic pay of auto is 30rs for 4km for the nxt 10km the price is 10rs per km for the next 15km the price is 15rs is the km are more than that the price will be 20rs users travel 19.5km what is thwould be the price price
