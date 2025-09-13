@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery Button Click</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("h1").text("Button clicked!");
+                $("h2").text("Button clicked!");
+                $("h3").text("Button clicked!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Button not clicked!</h1>
+    <h2>Button not clicked!</h2>
+    <h3>Button not clicked!</h3>
+    <button id="btn">Click Me</button>
+</body>
+</html>
+

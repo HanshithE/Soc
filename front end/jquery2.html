@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple To-Do List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f8fa;
+            color: #222;
+            padding: 20px;
+        }
+
+        #myInput, #add {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        #add {
+            background: #e0e7ef;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        #add:hover {
+            background: #cfd8e3;
+        }
+
+        ul#list {
+            background: #fff;
+            border-radius: 6px;
+            padding: 16px;
+            box-shadow: 0 2px 8px #0001;
+            margin-top: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 6px 0;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .complete {
+            background: #f3f3f3;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            margin-left: 10px;
+            cursor: pointer;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📝 My To-Do List</h2>
+    <input type="text" id="myInput" placeholder="Enter a task">
+    <button id="add">Add Task</button>
+
+    <ul id="list">
+        <p>Tasks will appear here</p>
+    </ul>
+
+    <script>
+        const taskColors = [
+            "#e3f2fd", // light blue
+            "#fce4ec", // light pink
+            "#e8f5e9", // light green
+            "#fffde7", // light yellow
+            "#f3e5f5", // light purple
+            "#fbe9e7"  // light orange
+        ];
+        let colorIndex = 0;
+
+        $(document).ready(function() {
+            $("#add").on("click", function() {
+                let task = $("#myInput").val().trim();
+                if (task) {
+                    let color = taskColors[colorIndex % taskColors.length];
+                    colorIndex++;
+                    $("#list").append(
+                        "<li style='background:" + color + "'>" +
+                        $("<div>").text(task).html() +
+                        ' <button class="complete">Complete</button></li>'
+                    );
+                    $("#myInput").val('');
+                }
+            });
+
+            $("#list").on("click", ".complete", function() {
+                $(this).parent().remove();
+            });
+        });
+    </script>
+
+</body>
+</html>

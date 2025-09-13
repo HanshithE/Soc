@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Portfolio - Summary & Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #2f1e1f;
+            color: #e4e4e4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #312121;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+        .summary {         
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #444;
+        }
+        .summary h2 {
+            margin-top: 0;
+            color: #ff004c;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #38385f;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            padding: 24px;
+            flex: 1 1 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #ff7e67;
+        }
+        .card p {
+            margin-bottom: 0;
+            color: #ccc;
+        }
+        @media (max-width: 700px) {
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="summary">
+            <h2>Acting Skills</h2>
+            <p>
+                Skilled actor with experience in theater, film, and television. Adept at character development, emotional expression, and improvisation, with a strong ability to connect with audiences and bring scripts to life.
+            </p>
+        </div>
+        <div>
+            <h2 style="color: #00d8ff;">Highlighted Projects</h2>
+           <div class="cards">
+    <div class="card">
+        <h3>Character Development</h3>
+        <p>
+            Skilled at deeply analyzing and embodying diverse characters, bringing authenticity and emotional depth to every role.
+        </p>
+    </div>
+    <div class="card">
+        <h3>Improvisation</h3>
+        <p>
+            Experienced in spontaneous acting techniques, enhancing creativity and adaptability on stage and screen.
+        </p>
+    </div>
+    <div class="card">
+        <h3>Voice Modulation</h3>
+        <p>
+            Expert in controlling pitch, tone, and pace to convey various emotions and personalities effectively.
+        </p>
+    </div>
+    <div class="card">
+        <h3>Stage Presence</h3>
+        <p>
+            Strong ability to command attention and connect with audiences through confident and engaging performances.
+        </p>
+    </div>
+</div> 
+        </div>
+    </div>
+    <span style="display: block; text-align: center; margin: 20px; color: #888;">© 2025 DevForge Studios</span>
+</body>
+</html>
