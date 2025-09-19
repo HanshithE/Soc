@@ -8,3 +8,18 @@ git add .
 git commit -m "your message"
 git push
 the basic pay of auto is 30rs for 4km for the nxt 10km the price is 10rs per km for the next 15km the price is 15rs is the km are more than that the price will be 20rs users travel 19.5km what is thwould be the price price
+
+
+npm router.
+ npm install react-router-dom
+ set-executionpolicy -scope process -executionpolicy bypass
+
+
+ maven project contains dependency
+ spring boot :  framework satisfies all necessary requirements
+ react use local server
+ bean = freelancer controller = contractor
+ convention configuration : purpose we use maven + springboot
+ use it when script is disable setexecution process bypass
+  powershell.exe -ExecutionPolicy Bypass -File "YourScript.ps1"
+

@@ -12,7 +12,7 @@ function App() {
     <button onClick={() => setCount(0)}>Reset</button>
   </div>)
 
-}
+}   
   
 
 export default App
